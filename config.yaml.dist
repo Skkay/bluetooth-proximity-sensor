@@ -1,0 +1,10 @@
+devices:
+  - mac: 00:00:00:00:00:00                        # Bluetooth MAC address
+    slug: some-device                             # Slug name used in the MQTT topic
+
+mqtt:
+  host: mqtt.example.com                          # MQTT broker host URL
+  port: 1883                                      # MQTT broker port
+  base_topic: home-assistant/bluetooth-presence/  # Base topic (the slug will be appended to this)
+
+scan_interval: 10                                 # Delay in second between two scan
